@@ -1,6 +1,6 @@
 ### Ambient Ticket Triage
 
-An agentic ticketing application for IT helpdesk that runs in the background to categorize, prioritize and to sends automated emails
+An agentic ticketing application for IT helpdesk: A system that runs in the background to categorize, prioritize, and send automated emails.
 
 #### Package Installation
 
