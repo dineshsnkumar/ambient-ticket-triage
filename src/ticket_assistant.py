@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.tools import tool
+from tools import write_email
 
 load_dotenv() 
 
@@ -14,10 +15,6 @@ llm = ChatGoogleGenerativeAI(
 )
 
 
-@tool
-def write_email(to:str, subject:str, body:str) -> str: 
-    """Draft and send an email"""
-    return f"Email sent {to} with {subject} and content {body}"
 
 model = llm.bind_tools([write_email])
 
